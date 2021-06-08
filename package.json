@@ -1,0 +1,37 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "coding challenge",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "npm run dev-client && node ./src/index.js ",
+    "dev-server": "nodemon ./src/index.js",
+    "dev-client": "webpack --mode development --config webpack.config.js"
+  },
+  "author": "walmex-team",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "^3.3.19",
+    "@material-ui/core": "^4.11.4",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.7",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.0",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
